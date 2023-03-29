@@ -6,51 +6,470 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Appland Bootstrap Template Demo</title>
   <link rel="stylesheet" href="./stylesheet/style.css">
+  <link href="./img/apple-touch-icon.png" rel="apple-touch-icon">
   <!--favicon-->
   <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
   <!--Google font-->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,60…0i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 </head>
 <body>
-<!--Navbar-->
-<header id="header">
+<!--header-->
+<header id="header" class="header">
   <div>
     <div class="logo">
       <h1>
       <a href="./index.html">Appland</a>
       </h1>
       </div>
+      <!--Navbar-->
       <nav id="navbar" class="navbar">
        <ul>
-        <li>Home</li>
-        <li>App Features</li>
-        <li>Gallery</li>
-        <li>Pricing</li>
-        <li>F.A.Q</li>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#app-features">App Features</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#f.a.q">F.A.Q</a></li>
         <li class="=dropdown">
-          <span>Drop Down</span>
+          <a href="#"><span>Drop Down</span></a>
          <ul>
-          <li>Drop Down 1</li>
-          <li> <span>Deep Drop Down</span> 
+          <li><a href="#">Drop Down 1</a></li>
+          <li> <span><a href="#">Deep Drop Down</a></span> 
            <ul> 
-            <li>Deep Drop Down 1</li>
-            <li>Deep Drop Down 2</li>
-            <li>Deep Drop Down 3</li>
-            <li>Deep Drop Down 4</li>
-            <li>Deep Drop Down 5</li> 
+            <li><a href="#">Deep Drop Down 1</a></li>
+            <li><a href="#">Deep Drop Down 2</a></li>
+            <li><a href="#">Deep Drop Down 3</a></li>
+            <li><a href="#">Deep Drop Down 4</a></li>
+            <li><a href="#">Deep Drop Down 5</a></li> 
            </ul>
            </li>
-           <li>Drop Down 2</li>
-           <li>Drop Down 3</li>
-           <li>Drop Down 4</li>
+           <li><a href="#">Drop Down 2</a></li>
+           <li><a href="#">Drop Down 3</a></li>
+           <li><a href="#">Drop Down 4</a></li>
          </ul>
          </li> 
-         <li>Contact</li>
-         <li>Get Started</li>   
+         <li><a href="#contact"> Contact </a></li>
+         <li><a href="#app-features"> Get Started </a></li>   
        </ul>
       </nav>
       </div>
 </header>  
+<!--Hero-->
+<section id="hero" class="d-flex align-items-center">
 
+  <div class="container">
+    <div class="row">
+      <div class="">
+        <div>
+          <h1>App landing page template</h1>
+          <h2>Lorem ipsum dolor sit amet, tota senserit percipitur ius ut, usu et fastidii forensibus voluptatibus. His ei nihil feugait</h2>
+          <a href="" class="download-btn">Google Play</a>
+          <a href="" class="download-btn">App Store</a>
+        </div>
+      </div>
+      <div>
+        <img src="./img/hero-img.png" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</section><!-- End Hero -->
+<!-- start-main -->
+<main id="main">
+
+  <!--App Features-->
+  <section id="features" class="features">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>App Features</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div class="row">
+        <div>
+          <div class="content d-flex flex-column justify-content-center">
+            <div class="row">
+              <div class="">
+                <h4>Corporis voluptates sit</h4>
+                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+              </div>
+              <div>
+                <h4>Ullamco laboris nisi</h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              </div>
+              <div>
+                <h4>Labore consequatur</h4>
+                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+              </div>
+              <div>
+                <h4>Beatae veritatis</h4>
+                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+              </div>
+              <div>
+                <h4>Molestiae dolor</h4>
+                <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
+              </div>
+              <div>
+                <h4>Explicabo consectetur</h4>
+                <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="./img/features.svg" class="img-fluid" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End-App Features Section -->
+
+  <!--Details-->
+  <section id="details" class="details">
+    <div class="container">
+
+      <div class="row content">
+        <div class="">
+          <img src="./img/details-1.png" class="img-fluid" alt="">
+        </div>
+        <div class="">
+          <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+          <p class="fst-italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+          </p>
+          <ul>
+            <li> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            <li> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            <li> Iure at voluptas aspernatur dignissimos doloribus repudiandae.</li>
+            <li> Est ipsa assumenda id facilis nesciunt placeat sed doloribus praesentium.</li>
+          </ul>
+          <p>
+            Voluptas nisi in quia excepturi nihil voluptas nam et ut. Expedita omnis eum consequatur non. Sed in asperiores aut repellendus. Error quisquam ab maiores. Quibusdam sit in officia
+          </p>
+        </div>
+      </div>
+
+      <div class="row content">
+        <div class="">
+          <img src="./img/details-2.png" class="img-fluid" alt="">
+        </div>
+        <div class="">
+          <h3>Corporis temporibus maiores provident</h3>
+          <p class="fst-italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+          </p>
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
+          <p>
+            Inventore id enim dolor dicta qui et magni molestiae. Mollitia optio officia illum ut cupiditate eos autem. Soluta dolorum repellendus repellat amet autem rerum illum in. Quibusdam occaecati est nisi esse. Saepe aut dignissimos distinctio id enim.
+          </p>
+        </div>
+      </div>
+
+      <div class="row content">
+        <div class="">
+          <img src="./img/details-3.png" class="img-fluid" alt="">
+        </div>
+        <div class="">
+          <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
+          <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+          <ul>
+            <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            <li>Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+          </ul>
+          <p>
+            Qui consequatur temporibus. Enim et corporis sit sunt harum praesentium suscipit ut voluptatem. Et nihil magni debitis consequatur est.
+          </p>
+          <p>
+            Suscipit enim et. Ut optio esse quidem quam reiciendis esse odit excepturi. Vel dolores rerum soluta explicabo vel fugiat eum non.
+          </p>
+        </div>
+      </div>
+
+      <div class="row content">
+        <div class="">
+          <img src="./img/details-4.png" class="img-fluid" alt="">
+        </div>
+        <div class="">
+          <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
+          <p class="fst-italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+          </p>
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
+          <ul>
+            <li> Et praesentium laboriosam architecto nam .</li>
+            <li> Eius et voluptate. Enim earum tempore aliquid. Nobis et sunt consequatur. Aut repellat in numquam velit quo dignissimos et.</li>
+            <li> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Details Section -->
+
+  <!--Gallery Section-->
+  <section id="gallery" class="gallery">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Gallery</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+    </div>
+
+    <div class="container-fluid">
+      <div class="gallery-slider">
+        <div class="">
+          <div class="slide"><a href="./img/gallery/gallery-1.png" class="gallery-idbox"><img src="./img/gallery/gallery-1.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="slide"><a href="./img/gallery/gallery-2.png" class="gallery-idbox"><img src="./img/gallery/gallery-2.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="slide"><a href="./img/gallery/gallery-3.png" class="gallery-idbox" ><img src="./img/gallery/gallery-3.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="slide"><a href="./img/gallery/gallery-4.png" class="gallery-idbox""><img src="assets/img/gallery/gallery-4.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="slide"><a href="./img/gallery/gallery-5.png" class="gallery-idbox"><img src="./img/gallery/gallery-5.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="slide"><a href="./img/gallery/gallery-6.png" class="gallery-idbox"><img src="./img/gallery/gallery-6.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="slide"><a href="./img/gallery/gallery-7.png" class="gallery-idbox"><img src="./img/gallery/gallery-7.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="slide"><a href="./img/gallery/gallery-8.png" class="gallery-idbox"><img src="./img/gallery/gallery-8.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="slide"><a href="./img/gallery/gallery-9.png" class="gallery-idbox"><img src="./img/gallery/gallery-9.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="slide"><a href="./img/gallery/gallery-10.png" class="gallery-idbox"><img src="./img/gallery/gallery-10.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="slide"><a href="./img/gallery/gallery-11.png" class="gallery-idbox"><img src="./img/gallery/gallery-11.png" class="img-fluid" alt=""></a>
+          </div>
+
+          <div class="slide"><a href="./img/gallery/gallery-12.png" class="gallery-idbox"><img src="./img/gallery/gallery-12.png" class="img-fluid" alt=""></a>
+          </div>
+          
+        </div>
+        <div class="pagination"></div>
+      </div>
+
+    </div>
+  </section><!-- End Gallery -->
+
+  <!--Testimonials-->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Testimonials</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div class="testimonials-slider">
+        <div class="">
+
+          <div class="idslide">
+            <div class="testimonial-item">
+              <img src="./img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+              <h3>Saul Goodman</h3>
+              <h4>Ceo &amp; Founder</h4>
+              <p>
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              </p>
+            </div>
+          </div>
+
+          <div class="idslide">
+            <div class="testimonial-item">
+              <img src="./img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+              <h3>Sara Wilsson</h3>
+              <h4>Designer</h4>
+              <p>
+                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              </p>
+            </div>
+          </div>
+
+          <div class="idslide">
+            <div class="testimonial-item">
+              <img src="./img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+              <h3>Jena Karlis</h3>
+              <h4>Store Owner</h4>
+              <p>
+                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              </p>
+            </div>
+          </div>
+
+          <div class="idslide">
+            <div class="testimonial-item">
+              <img src="./img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+              <h3>Matt Brandon</h3>
+              <h4>Freelancer</h4>
+              <p>
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              </p>
+            </div>
+          </div>
+
+          <div class="idslide">
+            <div class="testimonial-item">
+              <img src="./img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+              <h3>John Larson</h3>
+              <h4>Entrepreneur</h4>
+              <p>
+                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="id-pagination"></div>
+      </div>
+
+    </div>
+  </section><!--End Testimonials-->
+
+  <!--Pricing Section-->
+  <section id="pricing" class="pricing">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Pricing</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4 box">
+          <h3>Free</h3>
+          <h4>$0<span>per month</span></h4>
+          <ul>
+            <li>Quam adipiscing vitae proin</li>
+            <li>Nec feugiat nisl pretium</li>
+            <li>Nulla at volutpat diam uteera</li>
+            <li class="na"> <span>Pharetra massa massa ultricies</span></li>
+            <li class="na"> <span>Massa ultricies mi quis hendrerit</span></li>
+          </ul>
+          <a href="#" class="get-started-btn">Get Started</a>
+        </div>
+
+        <div class="col-lg-4 box featured">
+          <h3>Business</h3>
+          <h4>$29<span>per month</span></h4>
+          <ul>
+            <li> Quam adipiscing vitae proin</li>
+            <li>Nec feugiat nisl pretium</li>
+            <li>Nulla at volutpat diam uteera</li>
+            <li>Pharetra massa massa ultricies</li>
+            <li> Massa ultricies mi quis hendrerit</li>
+          </ul>
+          <a href="#" class="get-started-btn">Get Started</a>
+        </div>
+
+        <div class="col-lg-4 box">
+          <h3>Developer</h3>
+          <h4>$49<span>per month</span></h4>
+          <ul>
+            <li>Quam adipiscing vitae proin</li>
+            <li>Nec feugiat nisl pretium</li>
+            <li>Nulla at volutpat diam uteera</li>
+            <li>Pharetra massa massa ultricies</li>
+            <li>Massa ultricies mi quis hendrerit</li>
+          </ul>
+          <a href="#" class="get-started-btn">Get Started</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!--End Pricing-->
+
+  <!--F.A.Q-->
+  <section id="faq" class="faq">
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Frequently Asked Questions</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div class="list">
+        <ul>
+          <li><a  class="collapse">Non consectetur a erat nam at lectus urna duis? </a>
+            <div id="list-1" class="collapse">
+              <p>
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a class="collapsed">Feugiat scelerisque varius morbi enim nunc?</a>
+             <div id="list-2" class="collapse">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a class="collapsed">Dolor sit amet consectetur adipiscing elit?</a>
+             <div id="list-3" class="collapse">
+              <p>
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+              </p>
+            </div>
+          </li>
+
+          <li>
+             <a class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? </a>
+             <div id="list-4" class="collapse">
+              <p>
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? </a>
+             <div id="list-5" class="collapse">
+              <p>
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </section><!--End F.A.Q-->
+
+  <!--Contact-->
+  <section id="contact" class="contact">
+
+  </section><!--End Contact-->
+
+</main><!-- End main -->
 </body>
 </html>
