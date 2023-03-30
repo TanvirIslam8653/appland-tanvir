@@ -15,7 +15,7 @@
 <body>
 <!--header-->
 <header id="header" class="header">
-  <div>
+  <div  class="container d-flex align-items-center justify-content-between">
     <div class="logo">
       <h1>
       <a href="./index.html">Appland</a>
@@ -24,16 +24,16 @@
       <!--Navbar-->
       <nav id="navbar" class="navbar">
        <ul>
-        <li><a href="#hero">Home</a></li>
+        <li class="active"><a href="#hero">Home</a></li>
         <li><a href="#app-features">App Features</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#f.a.q">F.A.Q</a></li>
-        <li class="=dropdown">
+        <li><a href="#faq">F.A.Q</a></li>
+        <li class="dropdown">
           <a href="#"><span>Drop Down</span></a>
          <ul>
           <li><a href="#">Drop Down 1</a></li>
-          <li> <span><a href="#">Deep Drop Down</a></span> 
+          <li class="dropdown"> <span><a href="#">Deep Drop Down</a></span> 
            <ul> 
             <li><a href="#">Deep Drop Down 1</a></li>
             <li><a href="#">Deep Drop Down 2</a></li>
@@ -48,35 +48,38 @@
          </ul>
          </li> 
          <li><a href="#contact"> Contact </a></li>
-         <li><a href="#app-features"> Get Started </a></li>   
+         <li class="getstarted"><a href="#app-features">Get Started</a></li>   
        </ul>
       </nav>
       </div>
 </header>  
 <!--Hero-->
+
 <section id="hero" class="d-flex align-items-center">
 
   <div class="container">
     <div class="row">
-      <div class="">
+      <div class=" justify-content-center ">
         <div>
           <h1>App landing page template</h1>
           <h2>Lorem ipsum dolor sit amet, tota senserit percipitur ius ut, usu et fastidii forensibus voluptatibus. His ei nihil feugait</h2>
           <a href="" class="download-btn">Google Play</a>
           <a href="" class="download-btn">App Store</a>
-        </div>
-      </div>
-      <div>
-        <img src="./img/hero-img.png" class="img-fluid" alt="">
-      </div>
-    </div>
-  </div>
-</section><!-- End Hero -->
+          </div>
+         </div>
+          <div class="hero-img">
+            <img src="./img/hero-img.png" class="img-fluid" alt="">
+           </div>
+            </div>
+</div>
+</section>
+<!-- End Hero -->
+
 <!-- start-main -->
 <main id="main">
 
   <!--App Features-->
-  <section id="features" class="features">
+  <section id="app-features" class="app-features">
     <div class="container">
 
       <div class="section-title">
@@ -86,42 +89,43 @@
 
       <div class="row">
         <div>
-          <div class="content d-flex flex-column justify-content-center">
+          <div class="content flex-column justify-content-center">
             <div class="row">
-              <div class="">
+              <div class="icon-box">
                 <h4>Corporis voluptates sit</h4>
                 <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
               </div>
-              <div>
+              <div class="icon-box">
                 <h4>Ullamco laboris nisi</h4>
                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
               </div>
-              <div>
+              <div class="icon-box">
                 <h4>Labore consequatur</h4>
                 <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
               </div>
-              <div>
+              <div class="icon-box">
                 <h4>Beatae veritatis</h4>
                 <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
               </div>
-              <div>
+              <div class="icon-box">
                 <h4>Molestiae dolor</h4>
                 <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
               </div>
-              <div>
+              <div class="icon-box">
                 <h4>Explicabo consectetur</h4>
                 <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
               </div>
             </div>
           </div>
         </div>
-        <div>
+        <div class="image">
           <img src="./img/features.svg" class="img-fluid" alt="">
         </div>
       </div>
 
     </div>
-  </section><!-- End-App Features Section -->
+  </section>
+  <!-- End-App Features Section -->
 
   <!--Details-->
   <section id="details" class="details">
@@ -215,7 +219,8 @@
       </div>
 
     </div>
-  </section><!-- End Details Section -->
+  </section>
+  <!-- End Details -->
 
   <!--Gallery Section-->
   <section id="gallery" class="gallery">
@@ -230,7 +235,7 @@
 
     <div class="container-fluid">
       <div class="gallery-slider">
-        <div class="">
+        <div class="wrapper">
           <div class="slide"><a href="./img/gallery/gallery-1.png" class="gallery-idbox"><img src="./img/gallery/gallery-1.png" class="img-fluid" alt=""></a>
           </div>
 
@@ -272,9 +277,11 @@
       </div>
 
     </div>
-  </section><!-- End Gallery -->
+  </section>
+  <!-- End Gallery -->
+
   <!--Testimonials-->
-  <section id="testimonials" class="testimonials">
+  <section id="testimonials" class="testimonials section-bg">
     <div class="container">
 
       <div class="section-title">
@@ -283,7 +290,7 @@
       </div>
 
       <div class="testimonials-slider">
-        <div class="">
+        <div class="wrapper">
 
           <div class="idslide">
             <div class="testimonial-item">
@@ -324,8 +331,10 @@
               <h3>Matt Brandon</h3>
               <h4>Freelancer</h4>
               <p>
+                <i class="quote-icon-left"></i>
                 Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              </p>
+                </p> <i class="quote-icon-right"></i>
+
             </div>
           </div>
 
@@ -335,7 +344,9 @@
               <h3>John Larson</h3>
               <h4>Entrepreneur</h4>
               <p>
+                <i class="quote-icon-left"></i>
                 Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                <i class="quote-icon-right"></i>
               </p>
             </div>
           </div>
@@ -345,7 +356,8 @@
       </div>
 
     </div>
-  </section><!--End Testimonials-->
+  </section>
+  <!--End Testimonials-->
 
   <!--Pricing Section-->
   <section id="pricing" class="pricing">
@@ -358,7 +370,7 @@
 
       <div class="row">
 
-        <div class="col-lg-4 box">
+        <div class="box">
           <h3>Free</h3>
           <h4>$0<span>per month</span></h4>
           <ul>
@@ -371,7 +383,7 @@
           <a href="#" class="get-started-btn">Get Started</a>
         </div>
 
-        <div class="col-lg-4 box featured">
+        <div class="box featured">
           <h3>Business</h3>
           <h4>$29<span>per month</span></h4>
           <ul>
@@ -384,7 +396,7 @@
           <a href="#" class="get-started-btn">Get Started</a>
         </div>
 
-        <div class="col-lg-4 box">
+        <div class="box">
           <h3>Developer</h3>
           <h4>$49<span>per month</span></h4>
           <ul>
@@ -400,7 +412,8 @@
       </div>
 
     </div>
-  </section><!--End Pricing-->
+  </section>
+  <!--End Pricing-->
 
   <!--F.A.Q-->
   <section id="faq" class="faq">
@@ -462,13 +475,154 @@
       </div>
 
     </div>
-  </section><!--End F.A.Q-->
+  </section>
+  <!--End F.A.Q-->
 
   <!--Contact-->
   <section id="contact" class="contact">
+    <div class="container">
 
-  </section><!--End Contact-->
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
 
+      <div class="row">
+
+        <div class="">
+          <div class="row">
+            <div class="info">
+              <i class=""></i>
+              <h4>Address</h4>
+              <p>A108 Adam Street,<br>New York, NY 535022</p>
+            </div>
+            <div class="info">
+              <i class=""></i>
+              <h4>Call Us</h4>
+              <p>+1 5589 55488 55<br>+1 5589 22548 64</p>
+            </div>
+            <div class="info">
+              <i class=""></i>
+              <h4>Email Us</h4>
+              <p>contact@example.com<br>info@example.com</p>
+            </div>
+            <div class="info">
+              <i class=""></i>
+              <h4>Working Hours</h4>
+              <p>Mon - Fri: 9AM to 5PM<br>Sunday: 9AM to 1PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <form >
+            <div class="form-group">
+              <input placeholder="Your Name" type="text" name="name" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+              <input placeholder="Your Email" type="email" class="form-control" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <input placeholder="Subject" type="text" class="form-control" name="subject" id="subject" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Message" class="form-control" name="message" rows="5" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- End Contact -->
+
+    <!-- Footer -->
+    <footer id="footer">
+
+      <div class="footer-newsletter">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="">
+              <h4>Join Our Newsletter</h4>
+              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit" value="Subscribe">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+  
+            <div class="footer-contact">
+              <h3>Appland</h3>
+              <p>
+                A108 Adam Street <br>
+                New York, NY 535022<br>
+                United States <br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+            </div>
+  
+            <div class="footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class=""></i> <a href="#">Home</a></li>
+                <li><i class=""></i> <a href="#">About us</a></li>
+                <li><i class=""></i> <a href="#">Services</a></li>
+                <li><i class=""></i> <a href="#">Terms of service</a></li>
+                <li><i class=""></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class=""></i> <a href="#">Web Design</a></li>
+                <li><i class=""></i> <a href="#">Web Development</a></li>
+                <li><i class=""></i> <a href="#">Product Management</a></li>
+                <li><i class=""></i> <a href="#">Marketing</a></li>
+                <li><i class=""></i> <a href="#">Graphic Design</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer-links">
+              <h4>Our Social Networks</h4>
+              <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+               <div class="social-links">
+                <a href="#" class="twitter"><i class=""></i></a>
+                <a href="#" class="facebook"><i class=""></i></a>
+                <a href="#" class="instagram"><i class=""></i></a>
+                <a href="#" class="google-plus"><i class=""></i></a>
+                <a href="#" class="linkedin"><i class=""></i></a>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Appland</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="#">TanvirIslam</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
 </main><!-- End main -->
 </body>
 </html>
