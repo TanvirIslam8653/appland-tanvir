@@ -23,6 +23,7 @@ h6 {
 }
 
 /*Header*/
+
 #header {
   transition: all 0.5s;
   z-index: 997;
@@ -33,6 +34,11 @@ h6 {
 
 #header.header{
   background: transparent;
+  display: flex;
+}
+
+#header .container{
+  display: flex;
 }
 
 
@@ -66,6 +72,16 @@ h6 {
 
 .navbar {
   padding: 0;
+  margin-left: 342px;
+}
+#navbar .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 
 .navbar ul {
@@ -110,12 +126,22 @@ h6 {
 .navbar .getstarted,
 .navbar .getstarted:focus {
   background: #5777ba;
-  color: #ffff;
   padding: 12px 25px;
   margin-left: 30px;
-  color: #ffff;
   line-height: 1;
   border-radius: 50px;
+}
+
+#navbar .getstarted{
+  width: 118px;
+  height: 36px;
+   
+} 
+
+#navbar .button{
+  text-align: center;
+  color: #ffff;
+
 }
 
 .navbar .getstarted:hover,
